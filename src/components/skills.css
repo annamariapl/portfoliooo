@@ -1,0 +1,31 @@
+.skills-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skill {
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  flex-shrink: 0;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.75);
+
+}
+
+.skill-icon {
+  font-size: 35px;
+
+}
+
+.collapse-css-transition {
+  transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}

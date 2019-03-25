@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Karla|Lato");
+
+* {
+  color: white;
+  font-family: "Lato";
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.about-description {
+  padding: 20px;
+}
+
+.container {
+  background-color: #222222;
+  /*height: 100vw;*/
+}
+
+body {
+  background: #222222;
+}
+
+.header {
+  overflow: auto;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  margin: 20px;
+  padding: 20px;
+}
+
+.about {
+  background-color: black;
+  display: flex;
+}
+
+.picture {
+  flex: 1 1 50%;
+}
+
+.picture-img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.about-text {
+  flex: 1 0 30%;
+  background-color: black;
+  padding: 19px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+
+
+.accent-pink {
+  color: #ff0066;
+}
+
+.skills,
+.contact,
+.header,
+.projects {
+  background-color: #000000;
+}
+
+.navigation {
+  float: right;
+}
+
+.project-description {
+  font-size: 90%;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
