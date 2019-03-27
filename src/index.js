@@ -7,14 +7,26 @@ import Collapse from "@kunukn/react-collapse";
 import Projects from "./components/projects";
 import ReactDOM from "react-dom";
 import "./styles.css";
-
+import GitHub from "./components/GitHub/GitHub";
+import axios from "axios";
 
 class Container extends Component {
   state = {
-    aboutIsVisable: true
+    aboutIsVisable: true,
+    username: "annamariapl"
   };
 
+  componentDidMount() {
+    console.log("hello from index.js");
+    axios.get(`https//api.github.com/users/${this.state.username}/events`)
+    .then(response => {
+      console.log(response.data);
+    })
+  }
+
+
   render() {
+    // console.log("she");
     const { aboutIsVisable } = this.state;
     return (
       <div>
@@ -29,6 +41,7 @@ class Container extends Component {
           <About />
           <Skills />
           <Projects />
+          <GitHub />
           <Contact phoneNumber="+49 157 5335 2997" email="anna@wojtyga.pl" />
           </div>
           </div>

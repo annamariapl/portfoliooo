@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Picture from "./picture";
 import Collapse from "@kunukn/react-collapse";
+import url from "../assets/bw_me_s.png";
 
 class About extends Component {
   state = {
@@ -16,12 +17,13 @@ class About extends Component {
     const { openIndex } = this.state;
     return (
       <div className="container">
-      <div onClick={() => this.handleAClick(1)} className="about-text">
-      About &#11206;
+      <div className="main">
+      <div onClick={() => this.handleAClick(1)}>
+      <h3 className="section-title"> ABOUT &#11206; </h3>
       <Collapse isOpen={openIndex === 1}>
       <div className="main about">
       <Picture
-      src="https://static1.squarespace.com/static/5970a896414fb5d8ec28a9a2/t/59e8f9201f318dd01d019327/1503108869286/MYSLEF.jpg?format=300w"
+      src={url}
       alt="My profile"
       />
       <div className="about-description">
@@ -30,6 +32,7 @@ class About extends Component {
       </div>
       </div>
       </Collapse>
+      </div>
       </div>
       </div>
       );

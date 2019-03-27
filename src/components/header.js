@@ -3,7 +3,7 @@ import Button from "./button";
 
 const Header = ({ text }) => (
 	<div className="header">
-	<h1 className="accent-pink">{text}</h1>
+	<h1 className="accent-color">{text}</h1>
 {/*<div className="navigation"><Button>I am a button</Button></div>*/}
 </div>
 );

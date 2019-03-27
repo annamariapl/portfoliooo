@@ -49,7 +49,8 @@ class SkillsContainer extends Component {
     const { openIndex } = this.state;
     return (
       <div className="main skills">
-      <div onClick={() => this.handleAClick(1)} className="skills-title"> Skills &#11206;</div>
+      <div onClick={() => this.handleAClick(1)}> <h3 className="section-title"> SKILLS  &#11206; </h3>
+
 
       <Collapse isOpen={openIndex === 1}>
       <SkillsList>
@@ -65,6 +66,7 @@ class SkillsContainer extends Component {
   <Skill name="Javascript" icon={<FaJs />} children="intermediate" />
   </SkillsList>
   </Collapse>
+  </div>
   </div>
   );
   }
