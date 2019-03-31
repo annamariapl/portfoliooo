@@ -6,6 +6,10 @@ import Contact from "./components/contact";
 /*import Button from "./button";*/
 import Collapse from "@kunukn/react-collapse";
 import Projects from "./components/projects";
+
+
+
+
 class Container extends Component {
   state = {
     aboutIsVisable: true
@@ -22,7 +26,7 @@ class Container extends Component {
             Toggle About
           </Button>*/}
 
-          <Header text="Portfolio" />
+          <Header text="ANNA MARIA WOJTYGA" />
           <About />
           <Skills />
           <Projects />

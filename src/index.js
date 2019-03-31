@@ -6,9 +6,17 @@ import Contact from "./components/contact";
 import Collapse from "@kunukn/react-collapse";
 import Projects from "./components/projects";
 import ReactDOM from "react-dom";
-import "./styles.css";
 import GitHub from "./components/GitHub/GitHub";
 import axios from "axios";
+import Portfoliocard from "./components/portfoliocard";
+
+import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.css';
+import Carouselpro from "./components/carouselpro";
+import "./styles.css";
+import Groupcards from "./components/groupcards";
+
+
 
 class Container extends Component {
   state = {
@@ -24,30 +32,30 @@ class Container extends Component {
     })
   }
 
-
   render() {
     // console.log("she");
     const { aboutIsVisable } = this.state;
     return (
       <div>
       <div className="container">
-          {/* <Button
-            onClick={() => this.setState({ aboutIsVisable: !aboutIsVisable })}
-          >
-            Toggle About
-          </Button>*/}
+      {/* <Button
+        onClick={() => this.setState({ aboutIsVisable: !aboutIsVisable })}
+        >
+        Toggle About
+      </Button>*/}
 
-          <Header text="Portfolio" />
-          <About />
-          <Skills />
-          <Projects />
-          <GitHub />
-          <Contact phoneNumber="+49 157 5335 2997" email="anna@wojtyga.pl" />
-          </div>
-          </div>
+      <Header className="header-title" text="ANNA MARIA WOJTYGA" />
+      <About />
+      <Skills />
+      <Groupcards />
+    {/*<Carouselpro />*/}
+    <GitHub />
+    <Contact phoneNumber="+49 157 5335 2997" email="anna@wojtyga.pl" />
+    </div>
+    </div>
 
 
-          );
+    );
   }
 }
 

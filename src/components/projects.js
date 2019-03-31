@@ -60,7 +60,7 @@ class Projetcs extends Component {
       <Project 
       name="Kidaroo" 
       projectUrl ="http://www.kidaroo.club"
-      projectInfo="Tech: rails <br> "
+      projectInfo="Ruby in Rails"
       description="Kidaroo Kidaroo - Rails App - Best activities for Children & Families Kidaroo - Rails App - Best activities for Children & Families Kidaroo - Rails App - Best activities for Children & Families" 
       thumbnail={<Picture src={pic_kidaroo} alt="Kidaroo - Rails App - Best activities for Children & Families"/>}>
       </Project>
@@ -68,8 +68,8 @@ class Projetcs extends Component {
 
       <Project 
       name="Celebrate Life Festival" 
-      link="https://lovelytreebnb.herokuapp.com"
-      projectUrl ="https://celebrate-life.info/2019/"
+      projectUrl="https://celebrate-life.info/2019/"
+      projectInfo="WordPress"
       description="Projeckt Type: My freelancing project. Website for a spiritual Fesitval in Germany. 
       Selling tickets System: Event Brite API
       Live-Stream Mediathek: After buying a live-stream ticket you one can login in a watch live-streaming from the festival.
@@ -80,6 +80,7 @@ class Projetcs extends Component {
 
       <Project
       name="Tree airbnb" 
+      projectUrl="https://lovelytreebnb.herokuapp.com"
       thumbnail={<Picture src={pic_airbnb} alt="Airbnb for Squirrels"/>}
       description="Any idea is good enough to learn coding. Tree-airbnb is an app that helps squirrels find the perfect accomodation. 
       You can easy pay in acorns for your stay, manage your stay in your dashboard after log-in. And be an awesome squirrel that posts cool photos on social media ;-) 
@@ -89,6 +90,7 @@ class Projetcs extends Component {
 
       <Project
       name="Bewertung - project in progress"
+
       thumbnail={<Picture src="#www#" alt="Airbnb for Squirrels"/>}
       description="App created with Rails. For now it can upload data from CSV, do some /Bewertung/ magic and send me an email with doc file with data from exel file (csv)">
       </Project>

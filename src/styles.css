@@ -1,14 +1,36 @@
-@import url("https://fonts.googleapis.com/css?family=Karla|Lato");
+.skill h3 {
+  font-size: 100%;
+  font-weight: 900;
+
+}
+
+.header-title {
+  
+}
+
+body h3 {
+  font-size: 100%;
+  font-weight: 900;
+  color: teal; /*bootstrap*/
+}
+
+p.card-text {
+  padding-right: 30px;
+}
+
+.link-contact {
+
+}
 
 * {
-  color: white;
+  color: #555555;
   font-family: "Lato";
   margin: 0;
   padding: 0;
 }
 
 body {
-  background: #fafafa;
+  background: #181818;
 }
 
 .App {
@@ -16,7 +38,7 @@ body {
 }
 
 .container {
-  background-color: #fafafa;
+  background-color: #f1f1f1;
   /*height: 100vw;*/
 }
 
@@ -26,7 +48,7 @@ body {
 .projects,
 .about,
 .main {
-  background-color: #000000;
+  background-color: #fafafa;
 }
 
 .project-description {
@@ -34,9 +56,16 @@ body {
 }
 
 
-
-.about-description {
-  padding: 20px;
+.carousel-caption h3, 
+.carousel-caption p {
+  background: linear-gradient
+  (to right,
+    rgba(0,0,0,0) 16%,
+    rgba(0,0,0,0) 23%,
+    rgba(0,0,0,0.65) 49%,
+    rgba(0,0,0,0.65) 52%,
+    rgba(0,0,0,0) 75%,rgba(0,0,0,0) 91%);
+  color: white;
 }
 
 
@@ -54,26 +83,24 @@ body {
 }
 
 .about {
-  display: flex;
+  /*display: flex;*/
 }
 
-.section-title {
-  color: #ffffff;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #FF0065; /* Safari */  
-  text-decoration-color: #FF0065;
-}
+/*.section-title {
+  color: #802941;
+  }*/
 
-.picture {
-  flex: 1 1 50%;
-}
+  .picture {
+    flex: 1 1 50%;
+  }
 
-.picture-img {
- /* width: 100%;*/
- max-width: 200px;
-}
+  .picture-img {
+   /* width: 100%;*/
+   max-width: 200px;
+ }
 
-.about-text {
+
+ .about-text {
   flex: 1 0 30%;
   background-color: black;
   padding: 19px;
@@ -81,8 +108,12 @@ body {
   margin-right: 20px;
 }
 
+.about-description {
+  margin-top: 23px;
+}
+
 .accent-color {
-  color: #FF0065;
+  color: #46abaf;
 }
 
 
@@ -113,6 +144,7 @@ body {
 
 .project a {
   text-decoration: none;
+
 }
 
 
