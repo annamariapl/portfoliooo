@@ -28,8 +28,8 @@ class About extends Component {
       />
       <div className="about-description">
       Civil engeenering bachelor with passion for coding. Skilled in
-      Ruby in Rails and JavaScript. Experienced with WordPress. Currently learning React and this that is why this Portfolio was created with React.
-      <p> <br></br>Besides my mother tongue polish, I speak fluent english and german (C2 level).</p>
+      Ruby in Rails and JavaScript. Experienced with WordPress. Currently learning React.
+      <p> <br></br>Besides my mother tongue Polish, I speak fluent English and German (C2 level).</p>
       </div>
       </div>
       </Collapse>

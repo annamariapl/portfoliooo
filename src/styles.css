@@ -4,8 +4,20 @@
 
 }
 
+.main {
+  background: url("./assets/background.svg");
+}
+
 .header-title {
-  
+  margin-top: 20px;
+  padding-top: 30px;
+}
+
+
+.header-text {
+  font-weight: 100;
+  font-size: 1.5rem;
+
 }
 
 body h3 {
@@ -56,16 +68,14 @@ body {
 }
 
 
-.carousel-caption h3, 
-.carousel-caption p {
-  background: linear-gradient
-  (to right,
-    rgba(0,0,0,0) 16%,
-    rgba(0,0,0,0) 23%,
-    rgba(0,0,0,0.65) 49%,
-    rgba(0,0,0,0.65) 52%,
-    rgba(0,0,0,0) 75%,rgba(0,0,0,0) 91%);
-  color: white;
+.carousel-title  {
+  color: white !important;
+  background: teal;
+  /*background: linear-gradient(to right, #e9ecef00 16%, #5faafa29 6%, rgb(116, 183, 255) 49%, rgb(41, 170, 255) 52%, #54719073 75%,rgba(75, 165, 195, 0.35) 91%);*/
+}
+
+h3.carousel-title {
+  font-size: 1.75rem;
 }
 
 
@@ -73,6 +83,7 @@ body {
   overflow: auto;
   margin: 20px;
   padding: 10px;
+  padding-top: 80px;
   display: flex;
   justify-content: space-between;
 }
@@ -170,4 +181,5 @@ body {
  flex-direction: row;
  flex-wrap: wrap;
  justify-content: space-around;
+ margin-top: 25px;
 }

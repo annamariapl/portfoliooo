@@ -11,8 +11,9 @@ import Picture from "./picture"
 import pic_kidaroo from "../assets/kidaroo.png";
 import pic_clf from "../assets/clf.png";
 import pic_airbnb from "../assets/airbnb.png";
-import Carousel from 'react-bootstrap/Carousel';
 /*END -- URLS-IMPORT*/
+import Carousel from 'react-bootstrap/Carousel';
+import CustomCards from "./customcards";
 
 export const standardPadding = 50;
 
@@ -40,57 +41,59 @@ class Carouselpro extends Component {
     return (
       <div className="main projects">
       <div onClick={() => this.handleAClick(1)} className="projetcs">
-
       <h3 className="section-title"> PROJECTS &#11206; </h3></div>
-
-      
       <Collapse isOpen={openIndex === 1}>
-
-      <div>
       <Carousel>
+
+
       <Carousel.Item>
+      <a target="_blank" href="http://kidaroo.club">
       <img
       className="d-block w-100"
-      src={pic_kidaroo}
+      src={pic_kidaroo} 
       alt="kidaroo.club"
       />
+      </a>
+
       <Carousel.Caption>
-      <h3>Kidaroo</h3>
-      <p>Rails App - Activities for Children </p>
-      <p>find an activity for your child, pay with a credit-card<br/>
-      check your bookings in your dashboard and chat with other users.<br/>
-      Though the app was done just for practising purposes, it would be a good base for a fully functioning application.</p>
+      <h3 className="carousel-title">Kidaroo</h3>
+      <p className="carousel-title">Rails App - Activities for Children </p>
       </Carousel.Caption>
       </Carousel.Item>
+
+
       <Carousel.Item>
+      <a target="_blank" href="http://kidaroo.club">
       <img
       className="d-block w-100"
       src={pic_clf}
       alt="clf festival"
       />
-
+      </a>
       <Carousel.Caption>
-      <h3>Celebrate Life Festival</h3>
-      <p>WordPress Project</p>
-      <p>Buy tickets, Watch Media-stream,<br/>
-      and get inforemd about the festival</p>
-      <p>This project is real-life launched project</p>
+      <h3 className="carousel-title">Celebrate Life Festival</h3>
+      <p className="carousel-title">Launched WordPress Project</p>
       </Carousel.Caption>
       </Carousel.Item>
+
+
       <Carousel.Item>
+      <a target="_blank" href="http://kidaroo.club">
       <img
       className="d-block w-100"
       src={pic_airbnb}
       alt="AirBnb"
       />
-
+      </a>
       <Carousel.Caption>
-      <h3>Airbnb for squirrels </h3>
-      <p>Rails Fun Project</p>
+      <h3 className="carousel-title">Airbnb for squirrels </h3>
+      <p className="carousel-title">Rails Fun Project</p>
       </Carousel.Caption>
       </Carousel.Item>
+
+
       </Carousel>
-      </div>
+      <CustomCards />
       </Collapse>
 
       </div>

@@ -1,10 +1,10 @@
-.skills-list {
+/*.skills-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
+*/
 .skill {
   border: 3px solid white;
   border-radius: 50%;
@@ -16,7 +16,7 @@
   align-items: center;
   margin: 10px;
   flex-shrink: 0;
-  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 2px 10px rgba(151, 177, 243, 0.75);
 
 }
 

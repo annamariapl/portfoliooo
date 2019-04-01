@@ -8,13 +8,12 @@ import Projects from "./components/projects";
 import ReactDOM from "react-dom";
 import GitHub from "./components/GitHub/GitHub";
 import axios from "axios";
-import Portfoliocard from "./components/portfoliocard";
 
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carouselpro from "./components/carouselpro";
 import "./styles.css";
-import Groupcards from "./components/groupcards";
+
 
 
 
@@ -47,15 +46,14 @@ class Container extends Component {
       <Header className="header-title" text="ANNA MARIA WOJTYGA" />
       <About />
       <Skills />
-      <Groupcards />
-    {/*<Carouselpro />*/}
-    <GitHub />
-    <Contact phoneNumber="+49 157 5335 2997" email="anna@wojtyga.pl" />
-    </div>
-    </div>
+      <Carouselpro />
+      <GitHub />
+      <Contact phoneNumber="+49 157 5335 2997" email="anna@wojtyga.pl" />
+      </div>
+      </div>
 
 
-    );
+      );
   }
 }
 

@@ -11,21 +11,20 @@ import {
   FaPhp
 } from "react-icons/fa";
 import "./skills.css";
-
 import styled from "styled-components";
 import Collapse from "@kunukn/react-collapse";
 /* const SkillsList = props => (
   <div className={props.className}>{props.children}</div>
   ); */
 
-  export const standardPadding = 50;
+  /*  export const standardPadding = 50;*/
 
   const SkillsList = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: ${standardPadding}px;
+  padding: 30px;
   `;
 
 // class SkillsList extends React.Component {
@@ -55,7 +54,7 @@ class SkillsContainer extends Component {
       <Collapse isOpen={openIndex === 1}>
       <SkillsList>
     {/* a comment */}
-    <Skill name="HTML" icon={<FaHtml5 />}>expert</Skill>
+    <Skill name="HTML" icon={<FaHtml5 />}>expert</Skill> 
     <Skill name="React" icon={<FaReact />}>newbie</Skill>
     <Skill name="Git" icon={<FaGit />}> newbie</Skill>
     <Skill name="Ruby on Rails" icon={<FaCode />}>intermediate</Skill>

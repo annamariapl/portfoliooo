@@ -3,7 +3,7 @@ import"../styles.css";
 import styled from "styled-components";
 import Collapse from "@kunukn/react-collapse";
 import CardGroup from 'react-bootstrap/CardGroup';
-import Portfoliocard from "./portfoliocard";
+import CustomCard from "./customcard";
 /*URLS IMPORT*/
 import pic_kidaroo from "../assets/kidaroo.png";
 import pic_clf from "../assets/clf.png";
@@ -22,7 +22,7 @@ padding: ${standardPadding}px;
 `;
 
 
-class Groupcards extends Component {
+class CustomCards extends Component {
   state = {
     openIndex: 1
   };
@@ -35,14 +35,14 @@ class Groupcards extends Component {
   render() {
     const { openIndex } = this.state;
     return (
-      <div className="main projects">
+      <div className="projects">
       <div onClick={() => this.handleAClick(1)} className="projetcs">
-      <h3 className="section-title"> PROJECTS &#11206; </h3></div>
-      <Collapse isOpen={openIndex === 1}>
+      <h3 className="section-title"> ABOUT PROJECTS &#11206; </h3></div>
+      <Collapse isOpen={openIndex === -1 }>
       <div>
       <CardGroup>
 
-      <Portfoliocard 
+      <CustomCard
       title="Kidaroo"
       url_site="http://www.kidaroo.club"
       src={pic_kidaroo}
@@ -53,7 +53,7 @@ class Groupcards extends Component {
       
       />
 
-      <Portfoliocard 
+      <CustomCard 
       title="Celebrate Life Festival"
       url_site="https://celebrate-life.info/2019/"
       src={pic_clf}
@@ -63,7 +63,7 @@ class Groupcards extends Component {
       text3="Buy tickets via Event-Brite, watch media stream library and get informed about the Festival. The website is bilingual. "
       />
 
-      <Portfoliocard 
+      <CustomCard
       title="Airbnb for squirrels"
       url_site="https://lovelytreebnb.herokuapp.com"
       src={pic_airbnb}
@@ -92,4 +92,4 @@ class Groupcards extends Component {
   }
 }
 
-export default Groupcards;
+export default CustomCards;
