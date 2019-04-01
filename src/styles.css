@@ -13,6 +13,14 @@
   padding-top: 30px;
 }
 
+.links a {
+  color: teal;
+  text-decoration: none;
+}
+
+.links a:hover {
+  font-weight: 900;
+}
 
 .header-text {
   font-weight: 100;

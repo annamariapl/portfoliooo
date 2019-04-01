@@ -8,7 +8,11 @@ import CustomCard from "./customcard";
 import pic_kidaroo from "../assets/kidaroo.png";
 import pic_clf from "../assets/clf.png";
 import pic_airbnb from "../assets/airbnb.png";
+import Links from "./links";
+
+
 /*END -- URLS-IMPORT*/
+
 
 
 export const standardPadding = 50;
@@ -22,10 +26,14 @@ padding: ${standardPadding}px;
 `;
 
 
+
+
+
 class CustomCards extends Component {
   state = {
     openIndex: 1
   };
+
 
   handleAClick = index => {
     const { openIndex } = this.state;
@@ -75,15 +83,7 @@ class CustomCards extends Component {
       </CardGroup>
 
       <h4><br></br>More projects:</h4>
-      <p>
-      <a target="_blank" href="http://barefoot-yoga.de"> barefoot-yoga </a>,
-      <a target="_blank" href="http://space-in-between.de"> space-in-between </a>,
-      <a target="_blank" href="http://ai-and-law.com"> ai-and-law </a>,
-      <a target="_blank" href="http://geheimnisschutz.eu"> geheimnisschutz </a>,
-      <a target="_blank" href="http://marke-und-domain.de"> marke-und-domain.de</a>
-      </p>
-
-
+      <div><Links/></div>
       </div>
       </Collapse>
 

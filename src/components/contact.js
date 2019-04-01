@@ -6,11 +6,13 @@ import {
 	FaEnvelope
 } from "react-icons/fa";
 
-
 const Contact = props => (
 	<div className="main contact">
 	<h3 className="section-title"> 
 	CONTACT:</h3> <br/>
+
+
+	
 	<p> {<FaPhone />} {props.phoneNumber} </p> 
 	<a target="_blank" className="link-contact" href="mailto:anna@wojtyga.pl" > <p> {<FaEnvelope />} email: {props.email} </p> </a>
 	<a target="_blank" className="link-contact" href="https://github.com/annamariapl" > <p> {<FaGithub />} github</p> </a>

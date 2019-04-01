@@ -13,26 +13,15 @@ import {
 import "./skills.css";
 import styled from "styled-components";
 import Collapse from "@kunukn/react-collapse";
-/* const SkillsList = props => (
-  <div className={props.className}>{props.children}</div>
-  ); */
 
-  /*  export const standardPadding = 50;*/
 
-  const SkillsList = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 30px;
-  `;
-
-// class SkillsList extends React.Component {
-//   render() {
-//     const { className, children } = this.props;
-//     return <div className={className}>{children}</div>;
-//   }
-// }
+const SkillsList = styled.div`
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+padding: 30px;
+`;
 
 class SkillsContainer extends Component {
   state = {
@@ -48,26 +37,24 @@ class SkillsContainer extends Component {
     const { openIndex } = this.state;
     return (
       <div className="main skills">
-      <div onClick={() => this.handleAClick(1)}> <h3 className="section-title"> SKILLS  &#11206; </h3>
-
+      <div onClick={() => this.handleAClick(1)}> 
+      <h3 className="section-title"> SKILLS  &#11206; </h3>
 
       <Collapse isOpen={openIndex === 1}>
       <SkillsList>
-    {/* a comment */}
-    <Skill name="HTML" icon={<FaHtml5 />}>expert</Skill> 
-    <Skill name="React" icon={<FaReact />}>newbie</Skill>
-    <Skill name="Git" icon={<FaGit />}> newbie</Skill>
-    <Skill name="Ruby on Rails" icon={<FaCode />}>intermediate</Skill>
-    <Skill name="Python" icon={<FaPython />}>newbie</Skill>
-    <Skill name="PHP&WordPress" icon={<FaPhp />}>intermediate</Skill>
-    <Skill name="CSS" icon={<FaCss3Alt />}>expert
-  {/*[1, 2, 3].map(e => e) cool, I can write code here*/}</Skill>
-  <Skill name="Javascript" icon={<FaJs />} children="intermediate" />
-  </SkillsList>
-  </Collapse>
-  </div>
-  </div>
-  );
+      <Skill name="HTML" icon={<FaHtml5 />} level="advanced"/> 
+      <Skill name="React" icon={<FaReact />} level="newbie"/>
+      <Skill name="Git" icon={<FaGit />}  level="newbie"/>
+      <Skill name="Ruby on Rails" icon={<FaCode />} level="intermediate"/>
+      <Skill name="Python" icon={<FaPython />} level="newbie"/>
+      <Skill name="PHP&WordPress" icon={<FaPhp />} level="intermediate"/>
+      <Skill name="CSS" icon={<FaCss3Alt />} level="advanced"/>
+      <Skill name="Javascript" icon={<FaJs />} level="intermediate" />
+      </SkillsList>
+      </Collapse>
+      </div>
+      </div>
+      );
   }
 }
 

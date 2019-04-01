@@ -43,7 +43,7 @@ class Container extends Component {
         Toggle About
       </Button>*/}
 
-      <Header className="header-title" text="ANNA MARIA WOJTYGA" />
+      <Header className="header-title" text="ANNA MARIA WOJTYGA"/>
       <About />
       <Skills />
       <Carouselpro />

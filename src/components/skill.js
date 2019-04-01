@@ -2,14 +2,14 @@ import React from "react";
 
 // capital S!
 const Skill = props => {
-	const { icon, name, children } = props;
+	const { icon, name, level } = props;
 	return (
 		<div className="skill">
 		<div className="skill-icon">{icon}</div>
 		<h3>{name}</h3>
-		{children}
+		{level}
 		</div>
 		);
-};
+	};
 
-export default Skill;
+	export default Skill;
