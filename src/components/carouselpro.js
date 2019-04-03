@@ -14,6 +14,7 @@ import pic_airbnb from "../assets/airbnb.png";
 /*END -- URLS-IMPORT*/
 import Carousel from 'react-bootstrap/Carousel';
 import CustomCards from "./customcards";
+import Links from "./links";
 
 export const standardPadding = 50;
 
@@ -54,50 +55,64 @@ class Carouselpro extends Component {
       alt="kidaroo.club"
       />
       </a>
-
-      <Carousel.Caption>
+      <div>  
+      
       <h3 className="carousel-title">Kidaroo</h3>
       <p className="carousel-title">Rails App - Activities for Children </p>
-      </Carousel.Caption>
+      
+      <h4>Rails App - Activities for Children </h4>
+      <p>Find free-time activities for your child, pay with a credit card, log-in, check your dashboard and chat with other users.</p>
+      <p>The project came to life in just 10 days. It was an effect of a good teamwork and was a byproduct of a coding bootcamp. Though the app was done just for practising purposes, it would be a good base for a fully functioning application.</p>
+      </div>
       </Carousel.Item>
 
 
       <Carousel.Item>
-      <a target="_blank" href="http://kidaroo.club">
+      <a target="_blank" href="https://celebrate-life.info/2019/">
       <img
       className="d-block w-100"
       src={pic_clf}
       alt="clf festival"
       />
       </a>
-      <Carousel.Caption>
+      <div>  
       <h3 className="carousel-title">Celebrate Life Festival</h3>
       <p className="carousel-title">Launched WordPress Project</p>
-      </Carousel.Caption>
+      <h4>Celebrate Life Festival </h4>
+      <p>Buy tickets via Event-Brite, watch media stream library and get informed about the Festival. The website is bilingual.</p>
+      <p>This is a launched project.</p>
+      </div>
       </Carousel.Item>
 
 
       <Carousel.Item>
-      <a target="_blank" href="http://kidaroo.club">
+      <a target="_blank" href="https://lovelytreebnb.herokuapp.com">
       <img
       className="d-block w-100"
       src={pic_airbnb}
       alt="AirBnb"
       />
       </a>
-      <Carousel.Caption>
+
+      <div>
       <h3 className="carousel-title">Airbnb for squirrels </h3>
       <p className="carousel-title">Rails Fun Project</p>
-      </Carousel.Caption>
+      <p>Rails App - a fun project</p>
+      <p>It doesn't mean that it doesn't work. Offer a tree a host or rent a tree. No need to log-in for testing.</p>
+      </div>
       </Carousel.Item>
 
 
       </Carousel>
-      <CustomCards />
-      </Collapse>
+    {/*      <CustomCards />*/}
 
-      </div>
-      );
+    <hr/>
+    <h4><br/>More projects:</h4>
+    <div><Links/></div>
+    </Collapse>
+
+    </div>
+    );
   }
 }
 

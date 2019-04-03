@@ -17,7 +17,7 @@ import {
 
 class Links extends Component {
 	state = {
-		links: [
+		linksProjects: [
 		{text: "barefoot-yoga.de", link: "http://barefoot-yoga.de" },
 		{text: "space-in-between.de", link: "http://space-in-between.de"},
 		{text: "ai-and-law.com", link: "http://ai-and-law.com"},
@@ -30,7 +30,7 @@ class Links extends Component {
 		const { openIndex } = this.state;
 		return (
 			<div className="links">
-			{this.state.links && this.state.links.map(item => (
+			{this.state.linksProjects && this.state.linksProjects.map(item => (
 				<div> 
 				<a href={item.link}>{item.text}</a>
 				</div>

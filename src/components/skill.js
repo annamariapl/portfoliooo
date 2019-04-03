@@ -10,6 +10,6 @@ const Skill = props => {
 		{level}
 		</div>
 		);
-	};
+};
 
-	export default Skill;
+export default Skill;
