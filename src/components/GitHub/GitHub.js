@@ -9,7 +9,8 @@ const GitHub = props => {
 	return (
 		<Section>
 		<div>
-		<a target="_blank" className="link-contact links" href="https://github.com/annamariapl" > <p> {<FaGithub className="bigger-font-standard" />} How do I refactor my Portfolio ;-)</p> </a>
+		<a target="_blank" className="link-contact links" href="https://github.com/annamariapl" >
+		<p> {<FaGithub className="bigger-font-standard" />} How do I refactor my Portfolio ;-)</p> </a>
 
 	<hr/>
 	</div>

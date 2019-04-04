@@ -25,7 +25,7 @@ class About extends Component {
       <div onClick={() => this.handleAClick(1)}>
       <h3 className="section-title" id="about"> ABOUT &#11206; </h3>
       
-      <Collapse isOpen={openIndex === 1}>
+      <Collapse isOpen={openIndex === -1}>
       <div className="main about">
       <Picture
       src={url}

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const imageSize = "16px";
+const imageSize = "20px";
 
 const Container = styled.div`
 display: grid;
@@ -20,7 +20,7 @@ const GitHubCommit = props => {
 		
 		<Container >
 		<img src={props.image} alt={props.username + " avatar"} />
-		<strong>{props.header}</strong>
+		<strong><a className="links" target="_blank" href="https://github.com/annamariapl"><p >{props.header}</p></a></strong>
 		<div className="links"><a  href={props.url}>{props.commitMessage}</a>
 		<div className="time-stamp">{props.date}</div></div>
 		</Container>

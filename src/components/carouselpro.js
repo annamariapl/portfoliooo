@@ -43,7 +43,7 @@ class Carouselpro extends Component {
       <div className="main projects">
       <div onClick={() => this.handleAClick(1)} className="projetcs">
       <h3 id="projects" className="section-title"> PROJECTS &#11206; </h3></div>
-      <Collapse isOpen={openIndex === 1}>
+      <Collapse isOpen={openIndex === -1}>
       <Carousel>
 
 

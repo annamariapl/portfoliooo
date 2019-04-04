@@ -40,7 +40,7 @@ class SkillsContainer extends Component {
       <div onClick={() => this.handleAClick(1)}> 
       <h3 id="skills" className="section-title"> SKILLS  &#11206; </h3>
 
-      <Collapse isOpen={openIndex === 1}>
+      <Collapse isOpen={openIndex === -1}>
       <SkillsList>
       <Skill name="HTML" icon={<FaHtml5 />} level="advanced"/> 
       <Skill name="React" icon={<FaReact />} level="newbie"/>
