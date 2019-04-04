@@ -26,12 +26,23 @@
   background: url("./assets/background.svg");
 }
 
+.bigger-font-standard {
+  font-size: 225%;
+  margin-right: 20px;
+  fill: teal;
+}
+
 .header-title {
   margin-top: 20px;
   padding-top: 30px;
 }
 
-.links a {
+a {
+  text-decoration: none;
+}
+
+.links a,
+.links:hover {
   color: teal;
   text-decoration: none;
 }

@@ -17,12 +17,15 @@ img {
 
 const GitHubCommit = props => {
 	return (
-		<Container>
+		
+		<Container >
 		<img src={props.image} alt={props.username + " avatar"} />
 		<strong>{props.header}</strong>
-		<div>{props.commitMessage}
+		<div className="links"><a  href={props.url}>{props.commitMessage}</a>
 		<div className="time-stamp">{props.date}</div></div>
 		</Container>
+		
+
 		);
 };
 
