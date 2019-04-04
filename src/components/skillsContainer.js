@@ -38,7 +38,7 @@ class SkillsContainer extends Component {
     return (
       <div className="main skills">
       <div onClick={() => this.handleAClick(1)}> 
-      <h3 className="section-title"> SKILLS  &#11206; </h3>
+      <h3 id="skills" className="section-title"> SKILLS  &#11206; </h3>
 
       <Collapse isOpen={openIndex === 1}>
       <SkillsList>

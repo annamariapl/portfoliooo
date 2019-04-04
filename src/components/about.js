@@ -6,6 +6,7 @@ import cvDe from "../assets/wojtyga-de.pdf";
 import cvEn from "../assets/wojtyga-en.pdf";
 
 
+
 class About extends Component {
   state = {
     openIndex: 1
@@ -22,7 +23,8 @@ class About extends Component {
 
       <div className="main">
       <div onClick={() => this.handleAClick(1)}>
-      <h3 className="section-title"> ABOUT &#11206; </h3>
+      <h3 className="section-title" id="about"> ABOUT &#11206; </h3>
+      
       <Collapse isOpen={openIndex === 1}>
       <div className="main about">
       <Picture

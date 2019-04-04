@@ -13,41 +13,44 @@ import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carouselpro from "./components/carouselpro";
 import "./styles.css";
-
+import Containergit from "./components/containergit";
 
 
 
 class Container extends Component {
   state = {
-    aboutIsVisable: true,
-    username: "annamariapl"
-  };
+   username: "annamariapl",
+   pushData: ""
+ };
 
-  componentDidMount() {
+/*  componentDidMount() {
     console.log("hello from index.js");
     axios.get(`https//api.github.com/users/${this.state.username}/events`)
     .then(response => {
       console.log(response.data);
     })
   }
+  */
+  componentDidMount() {
+    axios.get(`https://api.github.com/users/${this.state.username}/events`).then(response => {
+      let pushData = response.data.filter(data => data.type === "PushEvent");
+      this.setState({
+        pushData
+      });
+    });
+  }
+
 
   render() {
-    // console.log("she");
     const { aboutIsVisable } = this.state;
     return (
       <div>
       <div className="container">
-      {/* <Button
-        onClick={() => this.setState({ aboutIsVisable: !aboutIsVisable })}
-        >
-        Toggle About
-      </Button>*/}
-
       <Header className="header-title" text="ANNA MARIA WOJTYGA"/>
       <About />
       <Skills />
       <Carouselpro />
-      <GitHub />
+      <Containergit myCommits={this.state.pushData} />
       <Contact phoneNumber="+49 157 5335 2997" email="anna@wojtyga.pl" />
       </div>
       </div>
@@ -67,4 +70,4 @@ ReactDOM.render(<App />, rootElement);
 
 
 
-export default Container;
+export default Container

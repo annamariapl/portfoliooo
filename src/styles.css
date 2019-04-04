@@ -9,6 +9,18 @@
   bottom: unset !important; /*overritting bootstrap*/
 }
 
+.spread-elements {
+  display: flex;
+}
+
+.sinlge-link-header {
+  margin: 0px 10px;
+}
+
+.time-stamp {
+  font-size: 70%;
+  font-style: italic;
+}
 
 .main {
   background: url("./assets/background.svg");
@@ -26,6 +38,8 @@
 
 .links a:hover {
   font-weight: 900;
+  text-decoration: none;
+  color: teal;
 }
 
 .header-text {

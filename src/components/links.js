@@ -16,23 +16,17 @@ import {
 
 
 class Links extends Component {
-	state = {
-		linksProjects: [
-		{text: "barefoot-yoga.de", link: "http://barefoot-yoga.de" },
-		{text: "space-in-between.de", link: "http://space-in-between.de"},
-		{text: "ai-and-law.com", link: "http://ai-and-law.com"},
-		{text: "geheimnisschutz.eu", link: "http://geheimnisschutz.eu"},
-		{text: "marke-und-domain.de", link: "http://marke-und-domain.de"}
-		]
-	};
 
 	render() {
-		const { openIndex } = this.state;
+		console.log(this.props.links);
 		return (
-			<div className="links">
-			{this.state.linksProjects && this.state.linksProjects.map(item => (
-				<div> 
+
+			<div className={`links ${this.props.classes}`}>
+			{this.props.links && this.props.links.map((item, index) => (
+				<div className="sinlge-link-header" key={index}> 
+
 				<a href={item.link}>{item.text}</a>
+
 				</div>
 				))}
 			</div>

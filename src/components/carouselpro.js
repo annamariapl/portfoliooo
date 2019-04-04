@@ -42,7 +42,7 @@ class Carouselpro extends Component {
     return (
       <div className="main projects">
       <div onClick={() => this.handleAClick(1)} className="projetcs">
-      <h3 className="section-title"> PROJECTS &#11206; </h3></div>
+      <h3 id="projects" className="section-title"> PROJECTS &#11206; </h3></div>
       <Collapse isOpen={openIndex === 1}>
       <Carousel>
 
@@ -108,7 +108,14 @@ class Carouselpro extends Component {
 
     <hr/>
     <h4><br/>More projects:</h4>
-    <div><Links/></div>
+    <div><Links links= { [
+      {text: "barefoot-yoga.de", link: "http://barefoot-yoga.de" },
+      {text: "space-in-between.de", link: "http://space-in-between.de"},
+      {text: "ai-and-law.com", link: "http://ai-and-law.com"},
+      {text: "geheimnisschutz.eu", link: "http://geheimnisschutz.eu"},
+      {text: "marke-und-domain.de", link: "http://marke-und-domain.de"}
+      ]
+    }/></div>
     </Collapse>
 
     </div>
