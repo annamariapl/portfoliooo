@@ -4,6 +4,10 @@
 
 }
 
+.highlight {
+  background-color: #0080801a;
+}
+
 .carousel-control-prev, .carousel-control-next {
   top: 100px !important;
   bottom: unset !important; /*overritting bootstrap*/

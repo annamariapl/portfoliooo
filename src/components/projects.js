@@ -10,6 +10,7 @@ import Picture from "./picture"
 import pic_kidaroo from "../assets/kidaroo.png";
 import pic_clf from "../assets/clf.png";
 import pic_airbnb from "../assets/airbnb.png";
+import pic_dataprotec from "../assets/dataprotec.png";
 /*END -- URLS-IMPORT*/
 
 
@@ -52,10 +53,32 @@ class Projetcs extends Component {
 
       <h3 className="section-title"> PROJECTS &#11206; </h3></div>
 
+
+
       
 
       <Collapse isOpen={openIndex === 1}>
       <ProjectsList>
+
+      <Project
+      name="Data Protection Form" 
+      projectUrl="https://github.com/annamariapl/data-protection-form"
+      thumbnail={<Picture src={pic_airbnb} alt="Data Protection Form"/>}
+      description="App that is collectiing information from user in order to help with TOM (technical and organizational measures) estimation. 
+      The Data from a YML file lands in a database via seed.rb. Next the data populates a formular (Simple_From) with checkboxes and text fields. 
+      After clicking a button 'Click - check...' is displayed a percentage of security (real logic not implemented, 'placeholder logic'). 
+
+      The collected Data Choices are being saved into a .docx (word document- setup with Caracal Gem). 
+      The Data can be manipulated directly in agreeements_controller.rb. 
+      The structure of the .docx document is of course not real and definitly not final - due to know-how protecting.
+      The doc is being send to an E-Mail (configured with Postfix). 
+      A safety copy of the document is being stored to a folder as well.
+
+      Next steps: 1) exchange yml for csv to make it excel compatable.,
+      2) Changing structure of the Form ( add text-field with prefilled text that can be changed.) 
+      It might be cool to use React (easy following changes) - so I am learning React now and will come back to this project very soon(hopefully).
+      ">
+      </Project>
 
       <Project 
       name="Kidaroo" 
