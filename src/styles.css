@@ -4,6 +4,12 @@
 
 }
 
+form.contact-form {
+  display: flex;
+}
+
+
+
 .highlight {
   background-color: #0080801a;
 }
