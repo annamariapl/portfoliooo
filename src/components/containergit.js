@@ -21,7 +21,7 @@ class Containergit extends Component {
       <div className="main">
       <div>
       <a target="_blank" className="link-contact links" href="https://github.com/annamariapl" >
-      <p> {<FaGithub className="bigger-font-standard" />} How do I refactor my Portfolio ;-) and all the other commits. </p> </a>
+      <p> {<FaGithub className="bigger-font-standard" />} How do I refactor my Portfolio ;-) and the other commits. </p> </a>
     <hr/>
     </div>
     <div onClick={() => this.handleAClick(1)}>
