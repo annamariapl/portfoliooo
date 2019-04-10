@@ -8,6 +8,11 @@ display: grid;
 grid-template-columns: ${imageSize} 150px auto;
 grid-gap: 5px;
 margin-bottom: 3px;
+@media only screen and (max-width: 768px) {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
 img {
 	width: ${imageSize};
 	height: ${imageSize};
