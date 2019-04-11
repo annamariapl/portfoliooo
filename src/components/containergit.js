@@ -26,11 +26,12 @@ class Containergit extends Component {
     </div>
     <div onClick={() => this.handleAClick(1)}>
     <h3 className="section-title" id="github"> GIT COMMITS &#11206; </h3>
+    </div>
     <Collapse isOpen={openIndex === -1}>
     <GitHub myCommits={this.props.myCommits} />
 
     </Collapse>
-    </div>
+    
     </div>
     );
 }

@@ -14,7 +14,7 @@ const GitHub = props => {
 				commitMessage={item.payload.commits[0].message}
 				username={item.actor.display_login}
 				date={item.created_at}
-				url="https://github.com/annamariapl" /*{item.repo.url}*/
+				url={"https://github.com/" + item.repo.name}
 				/>
 				);
 		})}

@@ -40,7 +40,6 @@ class Container extends Component {
     });
   }
 
-
   render() {
     const { aboutIsVisable } = this.state;
     return (
@@ -54,8 +53,6 @@ class Container extends Component {
       <Contact phoneNumber="+49 157 5335 2997" email="anna@wojtyga.pl" />
       </div>
       </div>
-
-
       );
   }
 }
