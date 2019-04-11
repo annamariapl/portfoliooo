@@ -14,13 +14,9 @@ import {
 	FaEnvelope
 } from "react-icons/fa";
 
-
 class Links extends Component {
-
 	render() {
-		console.log(this.props.links);
 		return (
-
 			<div className={`links ${this.props.classes}`}>
 			{this.props.links && this.props.links.map((item, index) => (
 				<div className="sinlge-link-header" key={index}> 

@@ -41,8 +41,8 @@ class About extends Component {
       <p> I am looking for a full-time position as a junior Front-End Developer where I can apply my experience and 
       develop myself further as a programmer. 
       Knowing Ruby in Rails, I am a good fit for a junior Full-Stack Developer too.</p>  
-      <p className="links">
       <hr/>
+      <p className="links">
       <a target="_blank" href={cvEn}>Cv in English</a><br/>
       <a target="_blank" href={cvDe}>Cv in German</a>
       </p>

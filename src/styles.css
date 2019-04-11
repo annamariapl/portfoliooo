@@ -17,6 +17,12 @@
   display: flex;
 }
 
+@media only screen and (max-width: 530px) {
+  .spread-elements {
+    flex-direction: column;
+  }
+}
+
 .sinlge-link-header {
   margin: 0px 10px;
 }
