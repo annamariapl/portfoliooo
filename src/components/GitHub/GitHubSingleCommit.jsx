@@ -20,10 +20,18 @@ const Container = styled.div`
   }
 `;
 
-const GitHubCommit = props => {
+const GitHubCommit = ({
+  image,
+  username,
+  header,
+  commitMessage,
+  url,
+  date,
+  reponame
+}) => {
   return (
     <Container>
-      <img src={props.image} alt={props.username + " avatar"} />
+      <img src={image} alt={username + " avatar"} />
       <strong>
         <a
           className="links"
@@ -31,12 +39,14 @@ const GitHubCommit = props => {
           rel="noopener noreferrer"
           href="https://github.com/annamariapl"
         >
-          <p> {props.header} </p>
+          <p> {header} </p>
         </a>
       </strong>
       <div className="links">
-        <a href={props.url}> {props.commitMessage} </a>
-        <div className="time-stamp"> {props.date} </div>
+        <a href={url}> {commitMessage} </a>
+        <div className="time-stamp">
+          {date} {reponame}
+        </div>
       </div>
     </Container>
   );
