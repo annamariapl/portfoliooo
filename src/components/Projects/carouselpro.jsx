@@ -5,7 +5,7 @@ import pic_airbnb from "./airbnb.png";
 import pic_clf from "./clf.png";
 import pic_dataprotec from "./dataprotec.png";
 import pic_kidaroo from "./kidaroo.png";
-import Links from "../links";
+import Links from "../links.jsx";
 
 export const standardPadding = 50;
 

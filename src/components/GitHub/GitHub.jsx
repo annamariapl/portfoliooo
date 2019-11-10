@@ -1,10 +1,11 @@
 import React from "react";
 import GitHubCommit from "./GitHubCommit";
-import Section from "../section.jsx";
+import Section from "./section.jsx";
 
 const GitHub = props => {
   return (
     <Section>
+      {" "}
       {props.myCommits &&
         props.myCommits.map(item => {
           return (
@@ -18,7 +19,7 @@ const GitHub = props => {
               url={"https://github.com/" + item.repo.name}
             />
           );
-        })}
+        })}{" "}
     </Section>
   );
 };

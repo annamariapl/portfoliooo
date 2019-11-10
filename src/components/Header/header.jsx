@@ -1,5 +1,5 @@
 import React from "react";
-import Links from "../links.js";
+import Links from "../links.jsx";
 
 const Header = ({ text }) => (
   <div className="header">

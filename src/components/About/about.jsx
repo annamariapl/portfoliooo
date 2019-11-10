@@ -1,6 +1,6 @@
 import Collapse from "@kunukn/react-collapse";
 import React, { Component } from "react";
-import Picture from "./picture";
+import Picture from "./picture.jsx";
 import url from "./me.png";
 import cvDe from "./wojtyga-de.pdf";
 import cvEn from "./wojtyga-en.pdf";

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import GitHub from "./GitHub";
+import GitHub from "./GitHub.jsx";
 import Collapse from "@kunukn/react-collapse";
 import { FaGithub } from "react-icons/fa";
 
