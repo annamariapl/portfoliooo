@@ -2,12 +2,12 @@ import axios from "axios";
 import "bootstrap/dist/css/bootstrap.css";
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import About from "./components/about";
-import Carouselpro from "./components/carouselpro";
-import Contact from "./components/contact";
-import Containergit from "./components/containergit";
-import Header from "./components/header";
-import Skills from "./components/skillsContainer";
+import About from "./components/About/about.jsx";
+import Carouselpro from "./components/Projects/carouselpro.jsx";
+import Contact from "./components/Contact/contact.jsx";
+import Containergit from "./components/GitHub/containergit.jsx";
+import Header from "./components/Header/header.jsx";
+import Skills from "./components/Skills/skillsContainer.js";
 import "./styles.css";
 
 class Container extends Component {

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import GitHub from "./GitHub/GitHub";
+import GitHub from "./GitHub";
 import Collapse from "@kunukn/react-collapse";
 import { FaGithub } from "react-icons/fa";
 
@@ -19,25 +19,21 @@ class Containergit extends Component {
     const { openIndex } = this.state;
     return (
       <div className="main">
-        <div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-contact links"
-            href="https://github.com/annamariapl"
-          >
-            <p>
-              {" "}
-              {<FaGithub className="bigger-font-standard" />}
-              How do I refactor my Portfolio; - ) and all the other commits.{" "}
-            </p>{" "}
-          </a>
-          <hr />
-        </div>{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          className="link-contact links"
+          href="https://github.com/annamariapl"
+        >
+          <p>
+            {<FaGithub className="bigger-font-standard" />}
+            How do I refactor my Portfolio; - ) and all the other commits.
+          </p>
+        </a>
+        <hr />
         <div onClick={() => this.handleAClick(1)}>
           <h3 className="section-title" id="github">
-            {" "}
-            GIT COMMITS & #11206;{" "}
+            GIT COMMITS &#10504;
           </h3>
         </div>
         <Collapse isOpen={openIndex === -1}>

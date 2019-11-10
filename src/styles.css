@@ -1,16 +1,16 @@
 .skill h3 {
   font-size: 100%;
   font-weight: 900;
-
 }
 
 .highlight {
   background-color: #0080801a;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   top: 100px !important;
-  bottom: unset !important; /*overritting bootstrap*/
+  bottom: unset !important;
 }
 
 .spread-elements {
@@ -72,15 +72,11 @@ a {
 body h3 {
   font-size: 100%;
   font-weight: 900;
-  color: teal; /*bootstrap*/
+  color: teal;
 }
 
 p.card-text {
   padding-right: 30px;
-}
-
-.link-contact {
-
 }
 
 * {
@@ -100,7 +96,6 @@ body {
 
 .container {
   background-color: #f1f1f1;
-  /*height: 100vw;*/
 }
 
 .skills,
@@ -116,24 +111,21 @@ body {
   max-width: 100%;
 }
 
-
 .carousel-indicators {
-  bottom: unset !important; /*overritting bootstrap*/
-  top: 140px !important; /*overritting bootstrap*/
+  bottom: unset !important;
+  top: 140px !important;
 }
 
-.carousel-title  {
+.carousel-title {
   color: white !important;
   background: teal;
   margin: 10px 0px;
   padding: 3px 9px;
-  /*background: linear-gradient(to right, #e9ecef00 16%, #5faafa29 6%, rgb(116, 183, 255) 49%, rgb(41, 170, 255) 52%, #54719073 75%,rgba(75, 165, 195, 0.35) 91%);*/
 }
 
 h3.carousel-title {
   font-size: 1.75rem;
 }
-
 
 .header {
   overflow: auto;
@@ -149,25 +141,15 @@ h3.carousel-title {
   padding: 20px;
 }
 
-.about {
-  /*display: flex;*/
+.picture {
+  flex: 1 1 50%;
 }
 
-/*.section-title {
-  color: #802941;
-  }*/
+.picture-img {
+  max-width: 200px;
+}
 
-  .picture {
-    flex: 1 1 50%;
-  }
-
-  .picture-img {
-   /* width: 100%;*/
-   max-width: 200px;
- }
-
-
- .about-text {
+.about-text {
   flex: 1 0 30%;
   background-color: black;
   padding: 19px;
@@ -182,7 +164,6 @@ h3.carousel-title {
 .accent-color {
   color: #46abaf;
 }
-
 
 .navigation {
   float: right;
@@ -214,8 +195,6 @@ h3.carousel-title {
 
 }
 
-
-
 .project-container {
   display: flex;
 }
@@ -233,9 +212,8 @@ h3.carousel-title {
 }
 
 .projects {
- /* display: flex;*/
- flex-direction: row;
- flex-wrap: wrap;
- justify-content: space-around;
- margin-top: 25px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 25px;
 }

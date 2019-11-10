@@ -1,13 +1,11 @@
 import Collapse from "@kunukn/react-collapse";
 import React, { Component } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import pic_airbnb from "../assets/airbnb.png";
-import pic_clf from "../assets/clf.png";
-import pic_dataprotec from "../assets/dataprotec.png";
-import pic_kidaroo from "../assets/kidaroo.png";
-import "../styles.css";
-import Links from "./links";
-import "./skills.css";
+import pic_airbnb from "./airbnb.png";
+import pic_clf from "./clf.png";
+import pic_dataprotec from "./dataprotec.png";
+import pic_kidaroo from "./kidaroo.png";
+import Links from "../links";
 
 export const standardPadding = 50;
 
@@ -27,8 +25,7 @@ class Carouselpro extends Component {
       <div className="main projects">
         <div onClick={() => this.handleAClick(1)} className="projetcs">
           <h3 id="projects" className="section-title">
-            {" "}
-            PROJECTS &#11206;{" "}
+            PROJECTS &#10504;
           </h3>
         </div>
         <Collapse isOpen={openIndex === -1}>
@@ -48,31 +45,29 @@ class Carouselpro extends Component {
               <div>
                 <h3 className="carousel-title">Data Protection Form</h3>
                 <p className="carousel-title">
-                  Rails App - Activities for Children{" "}
+                  Rails App - Activities for Children
                 </p>
 
                 <h4>Collectiing information to help with TOM esstimation</h4>
                 <p>
-                  TOM: technical and organizational measures. <br />{" "}
+                  TOM: technical and organizational measures. <br />
                 </p>
 
                 <p>
-                  {" "}
                   <strong> What the App does: </strong>
                 </p>
 
                 <p>
-                  The Data from a{" "}
+                  The Data from a
                   <span className="highlight">
-                    YAML file lands in a database{" "}
-                  </span>{" "}
+                    YAML file lands in a database
+                  </span>
                   via seed.rb. <br />
                   The data populates a formular (Simple_From: checkboxes and
                   text fields.
                 </p>
 
                 <p>
-                  {" "}
                   <span className="highlight">Security Check</span>
                   <br />
                   After clicking the button 'Click - check...' the app displayes
@@ -81,8 +76,7 @@ class Carouselpro extends Component {
                 </p>
 
                 <p>
-                  {" "}
-                  <span className="highlight">Saving to .docx format</span>{" "}
+                  <span className="highlight">Saving to .docx format</span>
                   <br />
                   The collected Data Choices are being saved into a .docx (word
                   document- setup with Caracal Gem). The Data can be manipulated
@@ -92,7 +86,6 @@ class Carouselpro extends Component {
                 </p>
 
                 <p>
-                  {" "}
                   <span className="highlight">
                     Sends an E-Mail with doc Datei
                   </span>
@@ -128,7 +121,7 @@ class Carouselpro extends Component {
               <div>
                 <h3 className="carousel-title">Kidaroo</h3>
                 <p className="carousel-title">
-                  Rails App - Activities for Children{" "}
+                  Rails App - Activities for Children
                 </p>
 
                 <h4>Rails App - Activities for Children </h4>

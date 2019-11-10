@@ -5,11 +5,10 @@ const Contact = props => (
   <div className="main contact">
     <h3 id="contact" className="section-title">
       CONTACT:
-    </h3>{" "}
+    </h3>
     <br />
     <p>
-      {" "}
-      {<FaPhone />} {props.phoneNumber}{" "}
+      {<FaPhone />} {props.phoneNumber}
     </p>
     <a
       target="_blank"
@@ -17,11 +16,9 @@ const Contact = props => (
       className="link-contact links"
       href="mailto:anna@wojtyga.pl"
     >
-      {" "}
       <p>
-        {" "}
-        {<FaEnvelope />} email: {props.email}{" "}
-      </p>{" "}
+        {<FaEnvelope />} email: {props.email}
+      </p>
     </a>
     <a
       target="_blank"
@@ -29,8 +26,7 @@ const Contact = props => (
       className="link-contact"
       href="https://github.com/annamariapl"
     >
-      {" "}
-      <p> {<FaGithub />} github</p>{" "}
+      <p> {<FaGithub />} github</p>
     </a>
     <a
       target="_blank"
@@ -38,8 +34,7 @@ const Contact = props => (
       className="link-contact"
       href="https://www.linkedin.com/in/anna-wojtyga/"
     >
-      {" "}
-      <p> {<FaLinkedin />} linkedin </p>{" "}
+      <p> {<FaLinkedin />} linkedin </p>
     </a>
   </div>
 );

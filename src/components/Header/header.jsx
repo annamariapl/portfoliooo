@@ -1,5 +1,5 @@
 import React from "react";
-import Links from "./links";
+import Links from "../links.js";
 
 const Header = ({ text }) => (
   <div className="header">
@@ -29,8 +29,8 @@ const Header = ({ text }) => (
             link: "#contact"
           }
         ]}
-      ></Links>{" "}
-    </div>{" "}
+      ></Links>
+    </div>
   </div>
 );
 
