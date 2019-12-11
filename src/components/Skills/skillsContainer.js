@@ -8,18 +8,18 @@ import {
   FaCode,
   FaGit,
   FaPython,
-  FaPhp
+  FaPhp,
+  FaLess
 } from "react-icons/fa";
 import "./skills.css";
 import styled from "styled-components";
 import Collapse from "@kunukn/react-collapse";
+import logots from "../../assets/logots.svg";
 
 const SkillsList = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 30px;
 `;
 
 class SkillsContainer extends Component {
@@ -44,22 +44,16 @@ class SkillsContainer extends Component {
           </h3>
           <Collapse isOpen={openIndex === -1}>
             <SkillsList>
-              <Skill name="HTML" icon={<FaHtml5 />} level="advanced" />
-              <Skill name="React" icon={<FaReact />} level="newbie" />
-              <Skill name="Git" icon={<FaGit />} level="newbie" />
-              <Skill
-                name="Ruby on Rails"
-                icon={<FaCode />}
-                level="intermediate"
-              />
-              <Skill name="Python" icon={<FaPython />} level="newbie" />
-              <Skill
-                name="PHP&WordPress"
-                icon={<FaPhp />}
-                level="intermediate"
-              />
-              <Skill name="CSS" icon={<FaCss3Alt />} level="advanced" />
-              <Skill name="Javascript" icon={<FaJs />} level="intermediate" />
+              <Skill name="Typescript" icon={<img src={logots} />} />
+              <Skill name="Javascript ES6" icon={<FaJs />} />
+              <Skill name="React.js" icon={<FaReact />} />
+              <Skill name="HTML" icon={<FaHtml5 />} />
+              <Skill name="CSS" icon={<FaCss3Alt />} />
+              <Skill name="LESS" icon={<FaLess />} />
+              <Skill name="Git" icon={<FaGit />} />
+              <Skill name="Python" icon={<FaPython />} />
+              <Skill name="Ruby on Rails" icon={<FaCode />} />
+              <Skill name="PHP&WordPress" icon={<FaPhp />} />
             </SkillsList>
           </Collapse>
         </div>

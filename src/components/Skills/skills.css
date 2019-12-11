@@ -1,8 +1,6 @@
 .skill {
-  border: 3px solid white;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,15 +8,18 @@
   margin: 10px;
   flex-shrink: 0;
   box-shadow: 1px 2px 10px rgba(151, 177, 243, 0.75);
-
 }
 
 .skill-icon {
-  font-size: 35px;
-
+  font-size: 20px;
 }
 
 .collapse-css-transition {
   transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
+}
+
+.skill-text {
+  font-size: 10px;
+  color: teal;
 }

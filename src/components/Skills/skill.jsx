@@ -1,12 +1,11 @@
 import React from "react";
 
 const Skill = props => {
-  const { icon, name, level } = props;
+  const { icon, name } = props;
   return (
     <div className="skill">
       <div className="skill-icon">{icon}</div>
-      <h3>{name}</h3>
-      {level}
+      <div className="skill-text">{name}</div>
     </div>
   );
 };
