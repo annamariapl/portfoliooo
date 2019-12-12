@@ -32,11 +32,21 @@ class About extends Component {
                   Frontend junior developer skilled in React.js and Typescript.
                 </p>
                 <p>
-                  In my free time I am teaching coding fundamentals in a Woman Digital Program, in ReDI School.
+                  In my free time I am teaching coding fundamentals in a Woman
+                  Digital Program, in ReDI School.
                 </p>
                 <p>
-                  I am looking for a full-time position where I can learn and bring real value to the customers.
+                  I am looking for a full-time position where I can bring real
+                  value to the customers and master my skills.
                 </p>
+                <hr />
+                <ul>
+                  <li>English - full professional proficiency (C2)</li>
+                  <li>
+                    German - full professional proficiency (C2 certificate)
+                  </li>
+                  <li>Polish - native speaker</li>
+                </ul>
                 <hr />
                 <p className="links">
                   <a target="_blank" rel="noopener noreferrer" href={cvEn}>
