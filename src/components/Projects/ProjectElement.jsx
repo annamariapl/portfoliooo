@@ -2,7 +2,7 @@ import React from "react";
 import Subtitle from "../ReusableComponents/Subtitle";
 import Title from "../ReusableComponents/Title";
 import "./project.css";
-import Links from "../links.jsx";
+import { LinksWithLine } from "../ReusableComponens/links.jsx";
 
 const ProjectElement = ({ project }) => {
   return (
@@ -11,6 +11,7 @@ const ProjectElement = ({ project }) => {
         <img className="projectImg" src={project.url} />
         <Title title={project.title} />
         <Subtitle subtitle={project.subtitle} />
+
         <div className="subtitle">
           {project.technologies.map(t => t + " | ")}
         </div>
@@ -23,8 +24,8 @@ const ProjectElement = ({ project }) => {
             </>
           ))}
         <br />
-        <p> Links:</p>
-        <Links classes="project-links" links={project.links} />
+        <p>Project created: {project.date}</p>
+        <LinksWithLine classes="project-links" links={project.links} />
       </div>
     </>
   );

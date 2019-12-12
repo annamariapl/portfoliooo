@@ -1,6 +1,8 @@
 import Collapse from "@kunukn/react-collapse";
 import React, { Component } from "react";
-import Links from "../links.jsx";
+import Links from "../ReusableComponens/links.jsx";
+import TitleWithHorizontalLine from "../ReusableComponens/TitleWithHorizontalLine.jsx";
+import SectionHeader from "../ReusableComponens/SectionHeader.jsx";
 import { projects, wordpressLinks } from "./dataFile";
 import ProjectElement from "./ProjectElement.jsx";
 
@@ -19,22 +21,15 @@ class Projects extends Component {
     return (
       <div className="main projects">
         <div onClick={() => this.handleAClick(1)} className="projetcs">
-          <h3 id="projects" className="section-title">
-            PROJECTS &#10504;
-          </h3>
+          <SectionHeader id="projects" text="PROJECTS" className="projetcs" />
         </div>
-        <Collapse isOpen={openIndex === -1}>
+        <Collapse isOpen={openIndex === 1}>
           <div className="projectsContainerAll">
-            {projects.reverse().map(project => (
+            {projects.map(project => (
               <ProjectElement project={project} />
             ))}
           </div>
-
-          <hr />
-          <h4>
-            <br />
-            Wordpress pages:
-          </h4>
+          <TitleWithHorizontalLine text="Wordpress pages:" />
           <Links links={wordpressLinks} />
         </Collapse>
       </div>

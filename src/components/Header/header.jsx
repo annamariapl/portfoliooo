@@ -1,5 +1,5 @@
 import React from "react";
-import Links from "../links.jsx";
+import Links from "../ReusableComponens/links.jsx";
 
 const Header = ({ text }) => (
   <div className="header">

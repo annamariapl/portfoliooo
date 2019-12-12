@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles.css";
+import "../ReusableComponens/links";
 
 const Links = ({ classes, links }) => {
   return (
@@ -15,3 +15,12 @@ const Links = ({ classes, links }) => {
 };
 
 export default Links;
+
+export const LinksWithLine = ({ classes, links }) => {
+  return (
+    <>
+      <hr />
+      <Links classes={classes} links={links} />
+    </>
+  );
+};
