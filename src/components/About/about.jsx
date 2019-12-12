@@ -2,7 +2,6 @@ import Collapse from "@kunukn/react-collapse";
 import React, { Component } from "react";
 import Picture from "./picture.jsx";
 import url from "./me.png";
-import cvDe from "./wojtyga-de.pdf";
 import cvEn from "./wojtyga-en.pdf";
 
 class About extends Component {
@@ -30,28 +29,18 @@ class About extends Component {
               <Picture src={url} alt="My profile" />
               <div className="about-description">
                 <p>
-                  Civil engeenering bachelor with passion for coding.Skilled in
-                  Ruby in Rails and JavaScript.Experienced with
-                  WordPress.Currently learning React.
+                  Frontend junior developer skilled in React.js and Typescript.
                 </p>
                 <p>
-                  Besides my mother tongue Polish, I speak fluent English and
-                  German(C2 level).
+                  In my free time I am teaching coding fundamentals in a Woman Digital Program, in ReDI School.
                 </p>
                 <p>
-                  I am looking for a full - time position as a junior Front -
-                  End Developer where I can apply my experience and develop
-                  myself further as a programmer.Knowing Ruby in Rails, I am a
-                  good fit for a junior Full - Stack Developer too.
+                  I am looking for a full-time position where I can learn and bring real value to the customers.
                 </p>
                 <hr />
                 <p className="links">
                   <a target="_blank" rel="noopener noreferrer" href={cvEn}>
                     Cv in English
-                  </a>
-                  <br />
-                  <a target="_blank" rel="noopener noreferrer" href={cvDe}>
-                    Cv in German
                   </a>
                 </p>
               </div>
