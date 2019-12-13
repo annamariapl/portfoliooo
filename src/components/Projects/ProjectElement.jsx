@@ -24,7 +24,7 @@ const ProjectElement = ({ project }) => {
             </>
           ))}
         <br />
-        <p>Project created: {project.date}</p>
+        <p className="accent-color">Project created: {project.date}</p>
         <LinksWithLine classes="project-links" links={project.links} />
       </div>
     </>
