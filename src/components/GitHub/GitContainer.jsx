@@ -4,14 +4,13 @@ import Collapse from "@kunukn/react-collapse";
 import SectionHeader from "../ReusableComponens/SectionHeader.jsx";
 
 const GitContainer = ({ myCommits }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const handleClick = index => {
     if (isOpen === index) {
       setIsOpen(true);
     } else setIsOpen(false);
   };
-
   return (
     <div className="main">
       <div onClick={() => handleClick(false)}>
@@ -19,8 +18,8 @@ const GitContainer = ({ myCommits }) => {
       </div>
 
       <Collapse isOpen={isOpen === true}>
-        My last commits <br /> <i>*only from public repositories</i>
-        <GitHub myCommits={myCommits} />
+        My last 10 commits <br /> <i>*only from public repositories</i>
+        <GitHub myCommits={myCommits.slice(0, 10)} />
       </Collapse>
     </div>
   );

@@ -56,11 +56,11 @@ export const projects = [
 
   {
     title: "Celebrate Life Festival",
-    subtitle: "Launched WordPress Project",
+    subtitle: "This is a real life, launched freelancing project",
     url: pic_clf,
     description:
       "Buy tickets via Event-Brite, watch media stream library and get informed about the Festival. The website is bilingual.",
-    technologies: ["wordpress", "php"],
+    technologies: ["wordpress", "php", "JS", "css"],
     links: [
       {
         text: "celebrate-life.info",
