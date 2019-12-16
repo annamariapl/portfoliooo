@@ -23,7 +23,7 @@ class Projects extends Component {
       <div className="main projects">
         <div onClick={() => this.handleAClick(-1)} className="projetcs">
           <SectionHeader id="projects" text="PROJECTS" className="projetcs" />
-          <Infobox text="With the exprience I have gained during my internship at Small Improvements Software GmbH (2019) I would approach many of my older projects differently." />
+          <Infobox text="With the exprience gained during my internship ( Aug - Dec 2019) I would approach my older projects differently." />
         </div>
         <Collapse isOpen={openIndex === 1}>
           <div className="projectsContainerAll">

@@ -30,3 +30,11 @@
   padding: 0px;
   font-size: 12px;
 }
+
+.projectLabel {
+  background: #f1f3ee;
+  padding: 2px;
+  margin-right: 4px;
+  font-size: 10px;
+  color: #444445;
+}

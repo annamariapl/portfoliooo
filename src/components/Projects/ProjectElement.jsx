@@ -8,12 +8,16 @@ const ProjectElement = ({ project }) => {
   return (
     <>
       <div className="containerProject">
-        <img className="projectImg" src={project.url} />
+        <a href={project.linkToProject}>
+          <img className="projectImg" src={project.pictureUrl} />
+        </a>
         <Title title={project.title} />
         <Subtitle subtitle={project.subtitle} />
 
-        <div className="subtitle">
-          {project.technologies.map(t => t + " | ")}
+        <div>
+          {project.technologies.map(t => {
+            return <span className="projectLabel">{t}</span>;
+          })}
         </div>
         <div>{project.description}</div>
         {project.features &&
@@ -24,8 +28,11 @@ const ProjectElement = ({ project }) => {
             </>
           ))}
         <br />
-        <p className="accent-color">Project created: {project.date}</p>
-        <LinksWithLine classes="project-links" links={project.links} />
+        <span className="projectLabel"> {project.date}</span>
+        <LinksWithLine
+          classes="project-links"
+          links={project.additionalLinks}
+        />
       </div>
     </>
   );
