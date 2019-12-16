@@ -1,39 +1,29 @@
 import React from "react";
-import { FaEnvelope, FaGithub, FaLinkedin, FaPhone } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import SectionHeader from "../ReusableComponens/SectionHeader.jsx";
+
+const Link = ({ href, icon, text }) => {
+  return (
+    <a target="_blank" rel="noopener noreferrer" className="links" href={href}>
+      {icon} {text}
+    </a>
+  );
+};
 
 const Contact = ({ email }) => (
-  <div className="main contact">
-    <h3 id="contact" className="section-title">
-      CONTACT:
-    </h3>
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      className="link-contact links"
-      href="mailto:anna@wojtyga.pl"
-    >
-      <FaEnvelope /> {email}
-    </a>
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      className="link-contact"
-      href="https://github.com/annamariapl"
-    >
-      <p>
-        <FaGithub /> github
-      </p>
-    </a>
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      className="link-contact"
-      href="https://www.linkedin.com/in/anna-wojtyga/"
-    >
-      <p>
-        <FaLinkedin /> linkedin
-      </p>
-    </a>
+  <div className="main contact links">
+    <SectionHeader id="contact" text="CONTACT:" className="contact" />
+    <Link href={"mailto:anna@wojtyga.pl"} icon={<FaEnvelope />} text={email} />
+    <Link
+      href={"https://github.com/annamariapl"}
+      icon={<FaGithub />}
+      text={"github"}
+    />
+    <Link
+      href={"https://www.linkedin.com/in/anna-wojtyga/"}
+      icon={<FaLinkedin />}
+      text={"linkedin"}
+    />
   </div>
 );
 

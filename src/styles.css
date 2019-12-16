@@ -39,7 +39,7 @@
 .bigger-font-standard {
   font-size: 225%;
   margin-right: 20px;
-  fill: teal;
+  fill: #444445;
 }
 
 .header-title {
@@ -51,16 +51,20 @@ a {
   text-decoration: none;
 }
 
+.flex-about {
+  display: flex;
+}
+
 .links a,
 .links:hover {
-  color: teal;
+  color: #88abb1;
   text-decoration: none;
 }
 
 .links a:hover {
   font-weight: 900;
   text-decoration: none;
-  color: teal;
+  color: #88abb1;
 }
 
 .header-text {
@@ -71,7 +75,7 @@ a {
 body h3 {
   font-size: 100%;
   font-weight: 900;
-  color: teal;
+  color: #444445;
 }
 
 p.card-text {
@@ -94,7 +98,9 @@ body {
 }
 
 .container {
-  background-color: #f1f1f1;
+  background-color: #e7eae3;
+  color: #444445;
+  color: #d1d7cb;
 }
 
 .skills,
@@ -106,6 +112,12 @@ body {
   background-color: #fafafa;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+,
 .project-description {
   max-width: 100%;
 }
@@ -117,7 +129,7 @@ body {
 
 .carousel-title {
   color: white !important;
-  background: teal;
+  background: #444445;
   margin: 10px 0px;
   padding: 3px 9px;
 }
@@ -142,10 +154,13 @@ h3.carousel-title {
 
 .picture {
   flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .picture-img {
-  max-width: 200px;
+  max-width: 170px;
 }
 
 .about-text {
@@ -161,7 +176,7 @@ h3.carousel-title {
 }
 
 .accent-color {
-  color: #46abaf;
+  color: #444445;
 }
 
 .navigation {

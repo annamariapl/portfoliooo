@@ -3,7 +3,7 @@
     <title>portfolio bacgrund</title>
     <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="99.7588489%" id="linearGradient-1">
-            <stop stop-color="#F5F5F5" offset="0%"></stop>
+            <stop stop-color="#ebefe7" offset="0%"></stop>
             <stop stop-color="#FFFFFF" offset="100%"></stop>
         </linearGradient>
     </defs>

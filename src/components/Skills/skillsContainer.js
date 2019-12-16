@@ -5,7 +5,7 @@ import {
   FaJs,
   FaCss3Alt,
   FaReact,
-  FaCode,
+  FaRails,
   FaGit,
   FaPython,
   FaPhp,
@@ -14,7 +14,8 @@ import {
 import "./skills.css";
 import styled from "styled-components";
 import Collapse from "@kunukn/react-collapse";
-import logots from "../../assets/logots.svg";
+import ts from "./assets/ts.png";
+import rails from "./assets/rails.png";
 
 const SkillsList = styled.div`
   display: flex;
@@ -24,7 +25,7 @@ const SkillsList = styled.div`
 
 class SkillsContainer extends Component {
   state = {
-    openIndex: 1
+    openIndex: -1
   };
 
   handleAClick = index => {
@@ -44,7 +45,10 @@ class SkillsContainer extends Component {
           </h3>
           <Collapse isOpen={openIndex === -1}>
             <SkillsList>
-              <Skill name="Typescript" icon={<img src={logots} />} />
+              <Skill
+                name="Typescript"
+                icon={<img className="customIconSkills" src={ts} />}
+              />
               <Skill name="Javascript ES6" icon={<FaJs />} />
               <Skill name="React.js" icon={<FaReact />} />
               <Skill name="HTML" icon={<FaHtml5 />} />
@@ -52,7 +56,10 @@ class SkillsContainer extends Component {
               <Skill name="LESS" icon={<FaLess />} />
               <Skill name="Git" icon={<FaGit />} />
               <Skill name="Python" icon={<FaPython />} />
-              <Skill name="Ruby on Rails" icon={<FaCode />} />
+              <Skill
+                name="Ruby on Rails"
+                icon={<img className="customIconSkills" src={rails} />}
+              />
               <Skill name="PHP&WordPress" icon={<FaPhp />} />
             </SkillsList>
           </Collapse>

@@ -31,8 +31,8 @@ class Projects extends Component {
               <ProjectElement key={project.title} project={project} />
             ))}
           </div>
-          <TitleWithHorizontalLine text="Wordpress pages:" />
-          <Links links={wordpressLinks} />
+          <TitleWithHorizontalLine text="Wordpress pages" />
+          <Links classes="spread-elements" links={wordpressLinks} />
         </Collapse>
       </div>
     );

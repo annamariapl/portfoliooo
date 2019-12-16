@@ -46,6 +46,7 @@ const GitHubCommit = ({
         <a href={url}> {commitMessage} </a>
         <div className="time-stamp">
           {date} {reponame}
+          <hr />
         </div>
       </div>
     </Container>
