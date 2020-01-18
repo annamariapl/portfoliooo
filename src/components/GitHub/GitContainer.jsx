@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import GitHub from "./GitHub.jsx";
 import Collapse from "@kunukn/react-collapse";
-import SectionHeader from "../ReusableComponens/SectionHeader.jsx";
+import SectionHeader from "../ReusableComponents/SectionHeader.jsx";
 
 const GitContainer = ({ myCommits }) => {
   const [isOpen, setIsOpen] = useState(true);
@@ -18,8 +18,8 @@ const GitContainer = ({ myCommits }) => {
       </div>
 
       <Collapse isOpen={isOpen === true}>
-        My last 10 commits <br /> <i>*only from public repositories</i>
-        <GitHub myCommits={myCommits.slice(0, 10)} />
+        My last 5 commits <br /> <i>*only from public repositories</i>
+        <GitHub myCommits={myCommits.slice(0, 5)} />
       </Collapse>
     </div>
   );

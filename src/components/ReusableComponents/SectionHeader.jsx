@@ -1,10 +1,10 @@
 import React from "react";
-import "../ReusableComponens/links";
+import "./Links/links.jsx";
 
 const SectionHeader = ({ className, id, text }) => {
   return (
     <h3 id={id} className={className}>
-      {text} &#10504;
+      {text}
     </h3>
   );
 };

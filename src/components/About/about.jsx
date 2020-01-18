@@ -44,9 +44,7 @@ class About extends Component {
                   <hr />
                   <ul>
                     <li>English - full professional proficiency (C2)</li>
-                    <li>
-                      German - full professional proficiency (C2 certificate)
-                    </li>
+                    <li>German - full professional proficiency (C2)</li>
                     <li>Polish - native speaker</li>
                   </ul>
                   <hr />

@@ -1,8 +1,8 @@
 import React from "react";
-import Links from "../ReusableComponens/links";
+import Links from "../ReusableComponents/Links/links";
 import { linksHeader } from "./data.js";
 
-const Header = ({ text }) => (
+const Navbar = ({ text }) => (
   <div className="header">
     <div>
       <h2 className="accent-color header-text"> {text}</h2>
@@ -12,4 +12,4 @@ const Header = ({ text }) => (
   </div>
 );
 
-export default Header;
+export default Navbar;

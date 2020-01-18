@@ -1,11 +1,11 @@
 import Collapse from "@kunukn/react-collapse";
 import React, { Component } from "react";
-import Links from "../ReusableComponens/links.jsx";
-import TitleWithHorizontalLine from "../ReusableComponens/TitleWithHorizontalLine.jsx";
-import SectionHeader from "../ReusableComponens/SectionHeader.jsx";
+import Links from "../ReusableComponents/Links/links.jsx";
+import { TitleWithHorizontalLine } from "../ReusableComponents/Title.jsx";
+import SectionHeader from "../ReusableComponents/SectionHeader.jsx";
 import { projects, wordpressLinks } from "./dataFile";
 import ProjectElement from "./ProjectElement.jsx";
-import Infobox from "../ReusableComponents/Infobox.jsx";
+import Infobox from "../ReusableComponents/Infobox/Infobox.jsx";
 
 export const standardPadding = 50;
 
@@ -31,7 +31,7 @@ class Projects extends Component {
               <ProjectElement key={project.title} project={project} />
             ))}
           </div>
-          <TitleWithHorizontalLine text="Wordpress pages" />
+          <TitleWithHorizontalLine title="WORDPRESS PAGES" />
           <Links classes="spread-elements" links={wordpressLinks} />
         </Collapse>
       </div>

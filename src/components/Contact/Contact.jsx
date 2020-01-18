@@ -1,6 +1,6 @@
 import React from "react";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
-import SectionHeader from "../ReusableComponens/SectionHeader.jsx";
+import SectionHeader from "../ReusableComponents/SectionHeader.jsx";
 
 const Link = ({ href, icon, text }) => {
   return (

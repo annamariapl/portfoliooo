@@ -2,12 +2,12 @@ import axios from "axios";
 import "bootstrap/dist/css/bootstrap.css";
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-import About from "./components/About/about.jsx";
-import Contact from "./components/Contact/contact.jsx";
-import GitContainer from "./components/GitHub/GitContainer.jsx";
-import Header from "./components/Header/header.jsx";
-import Projects from "./components/Projects/Projects.jsx";
-import Skills from "./components/Skills/skillsContainer.js";
+import About from "./components/About/about";
+import Contact from "./components/Contact/Contact";
+import GitContainer from "./components/GitHub/GitContainer";
+import Navbar from "./components/Navbar/Navbar";
+import Projects from "./components/Projects/Projects";
+import Skills from "./components/Skills/SkillsContainer";
 import "./styles.css";
 
 const Container = () => {
@@ -27,7 +27,7 @@ const Container = () => {
 
   return (
     <div className="container">
-      <Header className="header-title" text="ANNA MARIA WOJTYGA" />
+      <Navbar className="header-title" text="ANNA MARIA WOJTYGA" />
       <About />
       <Skills />
       <Projects />

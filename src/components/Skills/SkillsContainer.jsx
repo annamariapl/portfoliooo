@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import Skill from "./skill.jsx";
+import Skill from "./Skill.jsx";
 import {
   FaHtml5,
   FaJs,
   FaCss3Alt,
   FaReact,
-  FaRails,
   FaGit,
   FaPython,
   FaPhp,
@@ -47,7 +46,13 @@ class SkillsContainer extends Component {
             <SkillsList>
               <Skill
                 name="Typescript"
-                icon={<img className="customIconSkills" src={ts} />}
+                icon={
+                  <img
+                    alt="typescript icon"
+                    className="customIconSkills"
+                    src={ts}
+                  />
+                }
               />
               <Skill name="Javascript ES6" icon={<FaJs />} />
               <Skill name="React.js" icon={<FaReact />} />
@@ -58,7 +63,13 @@ class SkillsContainer extends Component {
               <Skill name="Python" icon={<FaPython />} />
               <Skill
                 name="Ruby on Rails"
-                icon={<img className="customIconSkills" src={rails} />}
+                icon={
+                  <img
+                    alt="rails icon"
+                    className="customIconSkills"
+                    src={rails}
+                  />
+                }
               />
               <Skill name="PHP&WordPress" icon={<FaPhp />} />
             </SkillsList>
