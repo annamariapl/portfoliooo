@@ -6,7 +6,7 @@
   "main": "src/app.js",
   "dependencies": {
     "@kunukn/react-collapse": "2.0.10",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "react": "16.8.3",
     "react-bootstrap": "1.0.0-beta.6",
